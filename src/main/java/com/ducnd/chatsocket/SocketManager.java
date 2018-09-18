@@ -20,7 +20,7 @@ public class SocketManager implements ApplicationListener<EmbeddedServletContain
         int thePort = event.getEmbeddedServletContainer().getPort();
         LOG.info("debug onApplicationEvent port: " + thePort);
         LOG.debug("debug onApplicationEvent port: " + thePort);
-        initSocket(thePort);
+//        initSocket(thePort);
     }
 
     private void initSocket(int thePort) {
