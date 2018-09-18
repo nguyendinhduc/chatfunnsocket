@@ -24,7 +24,7 @@ public class Main {
     public static void main(String[] args) {
 
 //        SpringApplication.run(Main.class, args);
-        initSocket(8080);
+        initSocket(5000);
     }
 
     private static void initSocket(int thePort) {
