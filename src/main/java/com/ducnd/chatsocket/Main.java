@@ -2,6 +2,7 @@ package com.ducnd.chatsocket;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.PropertySource;
@@ -24,8 +25,8 @@ public class Main {
     public static void main(String[] args) {
         LOG.info("run main class Main");
 
-//        SpringApplication.run(Main.class, args);
-        initSocket(8080);
+        SpringApplication.run(Main.class, args);
+        initSocket(1900);
     }
 
     private static void initSocket(int thePort) {
