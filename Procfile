@@ -1,1 +1,3 @@
-web: java -jar target/chatfunnsocket-1.0-SNAPSHOT.jar
+--server.port=$PORT
+-Dspring.server.port=$PORT
+web: java -jar target/${project.name}.jar
