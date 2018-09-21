@@ -22,9 +22,10 @@ public class Main {
     private static ServerSocket serverSocket;
 
     public static void main(String[] args) {
+        LOG.info("run main class Main");
 
 //        SpringApplication.run(Main.class, args);
-        initSocket(5000);
+        initSocket(8080);
     }
 
     private static void initSocket(int thePort) {
